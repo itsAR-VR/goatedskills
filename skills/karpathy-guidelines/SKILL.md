@@ -1,71 +1,62 @@
 ---
 name: karpathy-guidelines
-description: Apply Andrej Karpathy-inspired coding principles to reduce LLM mistakes. Use when starting complex tasks, before writing code, or when you notice over-engineering tendencies.
+description: Karpathy-inspired behavioral guardrails to reduce common LLM coding mistakes (wrong assumptions, overengineering, drive-by edits, missing verification loops).
+source: forrestchang/andrej-karpathy-skills
+license: MIT
 ---
 
-# Karpathy Coding Guidelines
+# Karpathy-Inspired Coding Guardrails
 
-Four principles to reduce common LLM coding mistakes, derived from observations about systematic pitfalls.
+Apply these principles whenever this skill is invoked.
 
-## 1. Think Before Coding
+## 1) Think Before Coding
 
-**Problem:** Wrong assumptions, hidden confusion, silent interpretation choices.
+Don’t assume. Don’t hide confusion. Surface tradeoffs.
 
-**Fix:**
-- State assumptions explicitly before coding
-- When multiple interpretations exist, present them—don't choose silently
-- If something is confusing, stop and ask rather than guessing
-- Push back if a simpler approach exists
+- State assumptions explicitly; if uncertain, ask.
+- If multiple interpretations exist, present them — don’t pick silently.
+- If a simpler approach exists, say so; push back when warranted.
+- If something is unclear, stop; name what’s confusing and ask.
 
-**Self-check:** "Am I hiding any uncertainty?"
+## 2) Simplicity First
 
-## 2. Simplicity First
+Minimum code that solves the problem. Nothing speculative.
 
-**Problem:** Overcomplication, speculative features, premature abstraction.
+- No features beyond what was asked.
+- No abstractions for single-use code.
+- No “flexibility” or “configurability” that wasn’t requested.
+- No error handling for impossible scenarios.
+- If 200 lines could be 50, rewrite it.
 
-**Fix:**
-- Write minimum code that solves exactly what was requested
-- No unrequested features, even "obviously helpful" ones
-- No unnecessary abstractions or configurability
-- No error handling for scenarios that can't happen
+Ask: “Would a senior engineer say this is overcomplicated?” If yes, simplify.
 
-**Self-check:** "Would a senior engineer say this is overcomplicated?"
+## 3) Surgical Changes
 
-## 3. Surgical Changes
+Touch only what you must. Clean up only your own mess.
 
-**Problem:** Scope creep, orthogonal modifications, "while I'm here" improvements.
+When editing existing code:
+- Don’t “improve” adjacent code, comments, or formatting.
+- Don’t refactor things that aren’t broken.
+- Match existing style, even if you’d do it differently.
+- If you notice unrelated dead code, mention it — don’t delete it.
 
-**Fix:**
-- Touch only what's necessary for the stated task
-- Match existing code style exactly
-- Don't refactor unrelated code or improve formatting elsewhere
-- Only remove imports/variables YOUR changes made obsolete
-- Leave pre-existing issues alone unless explicitly asked
+When your changes create orphans:
+- Remove imports/variables/functions that your changes made unused.
+- Don’t remove pre-existing dead code unless asked.
 
-**Self-check:** "Is every change directly required by the task?"
+Test: Every changed line should trace directly to the user’s request.
 
-## 4. Goal-Driven Execution
+## 4) Goal-Driven Execution
 
-**Problem:** Vague success criteria, unclear when "done", wasted iteration.
+Define success criteria. Loop until verified.
 
-**Fix:**
-- Transform requests into verifiable success criteria before starting
-- Define what "working" looks like in testable terms
-- Create verification steps you can execute
-- Loop until criteria are met, not until it "feels done"
+- “Add validation” → write tests for invalid inputs, then make them pass.
+- “Fix the bug” → write a test that reproduces it, then make it pass.
+- “Refactor X” → ensure tests pass before and after.
 
-**Self-check:** "Can I verify success without asking the user?"
+For multi-step tasks, create a brief plan with verifiable checks using the $phase-plan $phase-gaps $phase-implement $phase-review family of skills:
 
-## When to Apply
+1. [Step] → verify: [check]
+2. [Step] → verify: [check]
+3. [Step] → verify: [check]
 
-- **Always:** Complex multi-file changes, unfamiliar codebases, ambiguous requests
-- **Lighter touch:** Trivial tasks with obvious implementations
-- **Critical:** When you notice yourself adding "helpful" extras
-
-## Red Flags (Stop and Reconsider)
-
-- Adding features not explicitly requested
-- Creating abstractions "for future flexibility"
-- Refactoring adjacent code "while you're there"
-- Guessing at unclear requirements instead of asking
-- Writing error handling for impossible scenarios

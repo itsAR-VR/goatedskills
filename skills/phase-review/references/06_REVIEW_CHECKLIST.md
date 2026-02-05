@@ -26,6 +26,16 @@ Use this checklist every time.
 - Each success criterion has an explicit status: met / partial / not met.
 - Each criterion has evidence (file path, command output summary, or repro steps).
 
+## Implementation correctness (CRITICAL)
+
+- For each subphase with code changes, verify that the implementation matches what was planned:
+  - Check that planned files were actually created/modified.
+  - Verify planned functions/models exist and have the documented behavior.
+  - Confirm integrations are wired correctly (e.g., if plan says "call X from Y", verify X is actually called from Y).
+  - Check that data flows as described (e.g., if plan says "upsert on positive sentiment", verify the condition is implemented).
+- If deviations exist, document them explicitly as "planned vs implemented" in the review.
+- Do NOT mark criteria as "met" based solely on plan documentation — verify the actual code.
+
 ## Observability / telemetry (when relevant)
 
 - If the phase touches AI features: verify telemetry identifiers (featureId/promptKey) are present and referenced.

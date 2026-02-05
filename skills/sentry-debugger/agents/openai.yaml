@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sentry Debugger"
+  short_description: "Investigate Sentry issues and fix production errors"
+  default_prompt: "Pull live Sentry issues/events, map stack traces to code, implement fixes and tests, and verify in Sentry."
