@@ -7,6 +7,17 @@ description: RED TEAM the newest docs/planning/phase-N plan to find gaps/weak sp
 
 Read all references in `references/` before using this skill.
 
+## Original User Request Preservation
+
+Preserve the exact prompt that started this phase and use it as the anchor for all RED TEAM judgments.
+
+Before editing root plans:
+1. Open `docs/planning/phase-<N>/plan.md`.
+2. Keep the existing verbatim original request block at the top untouched.
+3. If the block is missing, add it as the first section after the plan title using:
+`## Original User Request (verbatim)` followed by the exact user text that initiated `/phase-plan`.
+4. If the exact text is not available, pause and request it before patching the plan.
+
 ## Multi-Agent Awareness
 
 **IMPORTANT:** Multiple agents may be working on different phases concurrently. RED TEAM analysis must account for:

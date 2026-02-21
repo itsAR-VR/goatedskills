@@ -19,6 +19,18 @@ If you detect overlap with an active phase, note it in your plan's Context secti
 
 See `06_MULTI_AGENT_COORDINATION.md` for detailed procedures.
 
+## Original User Request (verbatim)
+
+When creating the new phase plan, the first section in `docs/planning/phase-<N>/plan.md` must be a verbatim copy of the original user request that triggered `/phase-plan`.
+
+Place this section immediately after the phase title and before `## Purpose`, with the user's text unchanged (no paraphrasing or summary).
+
+Use this heading:
+
+## Original User Request (verbatim)
+
+and paste the exact wording of the triggering prompt beneath it.
+
 ## Signals
 
 - The conversation reaches a new direction or architecture decision

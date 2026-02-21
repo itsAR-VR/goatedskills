@@ -5,6 +5,9 @@
 ```md
 # Phase <N> — <derived title>
 
+## Original User Request (verbatim)
+(Paste the full original user request that triggered /phase-plan with no edits)
+
 ## Purpose
 (One or two sentences summarizing the user's objective)
 
