@@ -16,6 +16,15 @@ Always apply these skills as **subroutines** of $terminus-maximus. They exist to
 3. $context7-docs — If documentation is mentioned or platform/library behavior is version-sensitive, pull the relevant docs via Context7 MCP (resolve then query) before answering. Funnel findings back into Terminus Maximus updates; stay within Context7 call limits.
 4. $skill-creator — If the task involves creating or updating any skill (including this one), follow its creation/update and validation steps.
 
+## Original User Request Preservation
+
+- When this workflow is currently triggered by /phase-plan or $phase-gaps, treat the exact original user request text as canonical context.
+- Before any planning or RED TEAM reasoning, verify `docs/planning/phase-N/plan.md` begins with the literal user request copied verbatim (no paraphrase), and keep it unchanged.
+- If the exact prompt block is missing, extract it from the invocation trigger and add:
+  - `## Original User Request (verbatim)`
+  - The full original prompt content exactly as provided
+- Keep this block intact during subsequent `phase-gaps` passes and only reference it for context.
+
 ## Multi-Agent Awareness
 
 **IMPORTANT:** Multiple agents may be working on different phases concurrently. Every turn:
