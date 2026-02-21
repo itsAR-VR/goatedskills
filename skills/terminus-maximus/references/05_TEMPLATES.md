@@ -24,8 +24,8 @@
 ## 3) User response skeleton
 
 - On-disk changes
-- Assumptions (≥ 90%)
-- Questions (< 90%) with:
+- Assumptions (≥ 84.7%)
+- Questions (< 84.7%) with:
   - What decision is needed
   - Why it matters
   - Current default assumption

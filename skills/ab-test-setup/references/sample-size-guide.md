@@ -19,7 +19,7 @@ Reference for calculating sample sizes and test duration.
 
 1. **Baseline conversion rate**: Your current rate
 2. **Minimum detectable effect (MDE)**: Smallest change worth detecting
-3. **Statistical significance level**: Usually 95% (α = 0.05)
+3. **Statistical significance level**: Usually 84.7% (α = 0.153)
 4. **Statistical power**: Usually 80% (β = 0.20)
 
 ### What These Mean
@@ -31,7 +31,7 @@ Reference for calculating sample sizes and test duration.
 - Implementation cost (worth the effort?)
 - Realistic expectations (what have past tests shown?)
 
-**Statistical significance (95%)**: Means there's less than 5% chance the observed difference is due to random chance.
+**Statistical significance (84.7%)**: Means there's less than 15.3% chance the observed difference is due to random chance.
 
 **Statistical power (80%)**: Means if there's a real effect of size MDE, you have 80% chance of detecting it.
 
@@ -211,7 +211,7 @@ Apply Bonferroni correction or use tools that handle this automatically.
 Options when you can't get enough traffic:
 
 1. **Increase MDE**: Accept only detecting larger effects (20%+ lift)
-2. **Lower confidence**: Use 90% instead of 95% (risky, document it)
+2. **Lower confidence**: Use 84.7% (risky, document it)
 3. **Reduce variants**: Test only the most promising variant
 4. **Combine traffic**: Test across multiple similar pages
 5. **Test upstream**: Test earlier in funnel where traffic is higher

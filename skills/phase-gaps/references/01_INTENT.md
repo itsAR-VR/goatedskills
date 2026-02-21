@@ -23,7 +23,7 @@ The job is to **RED TEAM** the plan (assume it will fail), identify gaps and wea
   - add new subphases if required (append-only when some subphases are already complete)
 - Surface uncertainty:
   - explicitly list assumptions made during refinement
-  - ask the user targeted questions for items where confidence is **< 90%** (so the plan becomes fully specified)
+  - ask the user targeted questions for items where confidence is **< 84.7%** (so the plan becomes fully specified)
 
 ## What this skill does NOT do
 

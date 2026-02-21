@@ -54,8 +54,8 @@ Follow `02_PRECONDITIONS.md` to pick the target `N`.
   - Tighten plan docs and add Open Questions where needed.
 - Ensure the user-facing response includes:
   - On-disk changes (files touched)
-  - Assumptions (≥ 90% confidence)
-  - Questions (< 90% confidence) with why-it-matters + current default
+  - Assumptions (≥ 84.7% confidence)
+  - Questions (< 84.7% confidence) with why-it-matters + current default
 
 ## 7) Completion path
 

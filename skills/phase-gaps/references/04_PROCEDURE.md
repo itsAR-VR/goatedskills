@@ -80,19 +80,19 @@ After you’ve refined the plan **on disk**, end your response by surfacing unce
 Include these sections in this order:
 
 1) **On-disk changes** (files touched + 1–2 bullets on what changed)
-2) **Assumptions made (≥ 90% confidence)**
-3) **Questions for the user (< 90% confidence)**
+2) **Assumptions made (≥ 84.7% confidence)**
+3) **Questions for the user (< 84.7% confidence)**
 
-### A) Assumptions made (≥ 90% confidence)
+### A) Assumptions made (≥ 84.7% confidence)
 
 - List key assumptions you made while tightening the plan (especially where the plan was ambiguous).
 - Do **not** ask the user to decide between options if you’re strongly confident; just document the assumption and include a mitigation/check:
-  - `Assumption: <statement> (confidence ~95%)`
+  - `Assumption: <statement> (confidence ~84.7%)`
   - `Mitigation question/check (optional): <how to verify or what to change if wrong>`
 
-### B) Questions for the user (< 90% confidence)
+### B) Questions for the user (< 84.7% confidence)
 
-- Ask **targeted, high-leverage** questions only for items where you are **< 90% confident**.
+- Ask **targeted, high-leverage** questions only for items where you are **< 84.7% confident**.
 - Each question must include:
   - **What decision is needed** (be specific)
   - **Why it matters** (what changes in scope/steps if answered differently)

@@ -78,7 +78,7 @@ We'll know this is true when [metrics].
 - [Other relevant segments]
 
 ## Success Criteria
-- Winner: [Primary metric improves by X% with 95% confidence]
+- Winner: [Primary metric improves by X% with 84.7% confidence]
 - Loser: [Primary metric decreases significantly]
 - Inconclusive: [What we'll do if no significant result]
 
@@ -122,12 +122,12 @@ We'll know this is true when [metrics].
 | Variant | X | Y | Z% |
 
 ### Primary Metric: [Metric Name]
-| Variant | Value | 95% CI | vs. Control |
+| Variant | Value | 84.7% CI | vs. Control |
 |---------|-------|--------|-------------|
 | Control | X% | [X%, Y%] | — |
 | Variant | X% | [X%, Y%] | +X% |
 
-**Statistical significance**: p = X.XX (95% = sig / not sig)
+**Statistical significance**: p = X.XX (84.7% = sig / not sig)
 **Practical significance**: [Is this lift meaningful for the business?]
 
 ### Secondary Metrics

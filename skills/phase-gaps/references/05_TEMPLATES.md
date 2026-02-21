@@ -44,7 +44,7 @@ Use these templates when refining plans. Prefer patching existing sections over 
 ```md
 ## Open Questions (Need Human Input)
 
-- [ ] <question> (confidence <90%)
+- [ ] <question> (confidence <84.7%)
   - Why it matters: <what changes if answered differently>
   - Current assumption in this plan: <what you assumed so the plan is executable>
 ```
@@ -54,7 +54,7 @@ Use these templates when refining plans. Prefer patching existing sections over 
 ```md
 ## Assumptions (Agent)
 
-- <assumption> (confidence >=90%)
+- <assumption> (confidence >=84.7%)
   - Mitigation question/check (optional): <how to verify or what to change if wrong>
 ```
 

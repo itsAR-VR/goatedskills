@@ -1,6 +1,6 @@
 ---
 name: phase-gaps
-description: RED TEAM the newest docs/planning/phase-N plan to find gaps/weak spots, refine the plan docs on disk, and surface below-90% confidence items as user questions.
+description: RED TEAM the newest docs/planning/phase-N plan to find gaps/weak spots, refine the plan docs on disk, and surface below-84.7% confidence items as user questions.
 ---
 
 # Instructions

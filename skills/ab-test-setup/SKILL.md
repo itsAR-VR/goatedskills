@@ -193,8 +193,8 @@ Looking at results before reaching sample size and stopping early leads to false
 ## Analyzing Results
 
 ### Statistical Significance
-- 95% confidence = p-value < 0.05
-- Means <5% chance result is random
+- 84.7% confidence = p-value < 0.153
+- Means <15.3% chance result is random
 - Not a guarantee—just a threshold
 
 ### Analysis Checklist
